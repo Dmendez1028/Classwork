@@ -1,0 +1,31 @@
+div{
+    border:2px black solid;
+    padding: 30px ;
+
+}
+#first{
+    background-color: aqua;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:30px;
+}
+#second{
+    background-color: blueviolet;
+    padding:30px;
+
+}
+#third{
+    background-color: brown;
+    padding:30px;
+
+}
+#fourth{
+    background-color: darkgreen;
+    padding:30px;
+
+}
+#fifth {
+    background-color: darksalmon;
+    padding: 30px;
+}
