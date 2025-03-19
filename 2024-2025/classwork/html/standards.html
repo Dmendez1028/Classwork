@@ -3,10 +3,19 @@
     <head>
         <script>
             document.addEventListener("DOMContentLoaded",(ev)=>{
-                console.log("Destiny")
                 const save_button = document.getElementById("saveBtn");
-                console.log(save_button); 
+                console.log(save_button);
+                const items=Array.from(document.getElementsByTagName("input"))
+                console.log(items)
+                const checkeditems=[]
 
+                items.forEach((element)=> {
+                    if (element.checked) {
+                        let checked = {}
+                        checked["id"] = element.id;
+                        checkeditems.push(checked)
+                    }
+                })
 
 
 
@@ -194,6 +203,8 @@
             <input type="radio" id="7pc" name="7p" value="competent">
             <label for="7pa">advanced</label>
             <input type="radio" id="7pa" name="7p" value="Advanced">
+            <button id = "saveBtn"> Saved
+            </button>
         </main>
         <footer>
 

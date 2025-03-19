@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        document.addEventListener("DOMContentLoaded",(event)=> {
+const FirstName=document.getElementById("FirstName")
+            const btnget=document.getElementById("btnget")
+            const output=document.getElementById("output")
+            btnget.addEventListener("click",(evt)=>{
+                let message="Hi, " +FirstName.value +", are you ready to code?"
+                output.textContent=message
+            })
+
+
+        })
+    </script>
+</head>
+<body>
+<label for="FirstName"> Please input your first name</label><br>
+
+<input type="text" id="FirstName"><br>
+<button type ="button" id="btnget">Get Message</button>
+<h3 id="output">Place holder</h3>
+
+</body>
+</html>
